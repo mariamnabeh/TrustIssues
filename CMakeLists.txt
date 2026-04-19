@@ -1,17 +1,19 @@
+# Specify the minimum CMake version required
 cmake_minimum_required(VERSION 3.10)
 
-# Project name and versioning
+# Define the project name and its version
 project(TrustIssues VERSION 1.0)
 
-# Enforce C++17 standard for modern features
+# Set C++17 as the required standard for modern features
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Point to header files directory
+# Tell the compiler where to look for header files (.h)
 include_directories(include)
 
-# Gather all source files from the src directory
+# Automatically collect all source files (.cpp) from the src directory
 file(GLOB SOURCES "src/*.cpp")
 
-# Build the executable using the project name
+# Link everything together to create the final executable
+# ${PROJECT_NAME} refers to "TrustIssues" automatically
 add_executable(${PROJECT_NAME} ${SOURCES})
