@@ -1,0 +1,14 @@
+# Ignore build directory
+build/
+
+# Ignore Visual Studio temporary files
+.vscode/
+*.obj
+*.exe
+*.pdb
+
+# Ignore local system files
+.DS_Store
+Thumbs.db
+  
+  
