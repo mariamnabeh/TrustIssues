@@ -18,6 +18,18 @@ vector<unsigned char> FileHandler::readfile(const string& filePath) {
     file.read(reinterpret_cast<char*>(buffer.data()), size); // Read the file data into our buffer, casting to char* because read() expects it
 
     return buffer;
+
+}
+
+// add XOR logic:
+
+void FileHandler:: encryptDecrypt(vector<unsigned char>& data, const string& key) {
+    if (key.empty()) return;
+
+    size_t keyLength = key.length();
+    for (size_t i = 0; i < data.size(); ++i) {
+        data[i] = data[i] ^ key[i % keyLength];
+    }
 }
 
 void FileHandler::writefile(const string& filePath, const vector<unsigned char>& data) {
@@ -25,4 +37,6 @@ void FileHandler::writefile(const string& filePath, const vector<unsigned char>&
     if (file.is_open()) {
         file.write(reinterpret_cast<const char*>(data.data()), data.size()); // write the binary char into new file
     }
+
+   
 }
