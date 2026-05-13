@@ -26,3 +26,6 @@ The project follows a modular C++ structure to ensure clean code and easy debugg
 1. **Clone the vault:**
    ```bash
    git clone [https://github.com/your-username/TrustIssues.git](https://github.com/your-username/TrustIssues.git)
+
+  Developed with 💜 by Mariam Nabeh.
+   
