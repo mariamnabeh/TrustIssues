@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     // 1. Define file paths and encryption key
-    string originalFile = "test.txt";      // Create a small text file with this name first!
+    string originalFile = "test.txt";  
     string encryptedFile = "locked.vega";
     string decryptedFile = "recovered.txt";
     string myKey = "Maryam_Vault_2026";
