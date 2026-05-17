@@ -1,8 +1,8 @@
 # Specify the minimum CMake version required
 cmake_minimum_required(VERSION 3.10)
 
-# Define the project name and its version
-project(TrustIssues VERSION 1.0)
+# Define the project name as VegaVault
+project(VegaVault VERSION 1.0)
 
 # Set C++17 as the required standard for modern features
 set(CMAKE_CXX_STANDARD 17)
@@ -15,5 +15,5 @@ include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 
 # Link everything together to create the final executable
-# ${PROJECT_NAME} refers to "TrustIssues" automatically
+# ${PROJECT_NAME} now refers to "VegaVault"
 add_executable(${PROJECT_NAME} ${SOURCES})
