@@ -11,9 +11,9 @@ vector<unsigned char> FileHandler::readfile(const string& filePath) {
     }
 
     streamsize size = file.tellg(); // AS We use ate to reach theend , so if we use telling to know , which  char we stop in . that char =size
-    file.seekg(0, ios::beg); // so start from beg agin , bec weknow the ize now.
+    file.seekg(0, ios::beg); // so start again , bec weknow the ize now.
 
-    vector<unsigned char> buffer(size); // buffer to:
+    vector<unsigned char> buffer(size); // buffer is: vector contain all file size
 
     file.read(reinterpret_cast<char*>(buffer.data()), size); // Read the file data into our buffer, casting to char* because read() expects it
 

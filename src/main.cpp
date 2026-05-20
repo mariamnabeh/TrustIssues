@@ -6,10 +6,10 @@ using namespace std;
 
 int main() {
     // 1. Define file paths and encryption key
-    string originalFile = "test.txt";  
-    string encryptedFile = "locked.vega";
-    string decryptedFile = "recovered.txt";
-    string myKey = "Maryam_Vault_2026";
+    string originalFile = "../test/test.txt";
+    string encryptedFile = "../test/locked.vega";
+    string decryptedFile = "../test/recovered.txt";
+    string myKey = "Mariam_Vault_2026";
 
     cout << "--- Vega Vault Engine Test ---" << endl;
 
